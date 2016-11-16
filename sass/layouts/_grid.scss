@@ -1,0 +1,17 @@
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  @include transition(width 1s ease);
+
+  @include media(sm){
+    width: 100%;
+  }
+
+  @include media(md){
+    width: 750px;
+  }
+
+  @include media(lg){
+    width: 960px;
+  }
+}

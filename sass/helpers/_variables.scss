@@ -1,0 +1,33 @@
+//FONTS
+$font: 'Lato', 'Helvetica', 'Open Sans', 'Arial', sans-serif;
+
+//COLORS VARIABLES
+$brown: #664735;
+
+//FONT PATH
+$font-path: '../fonts/Lato/';
+
+//SCREENS
+$screen-xs: '(max-width: 479px)';
+$screen-sm: '(max-width: 767px)';
+$screen-md: '(min-width: 768px) and (max-width: 991px)';
+$screen-lg: '(min-width: 992px)';
+
+//BREAKPOINTS
+$breakpoints: (
+        xs: $screen-xs,
+        sm: $screen-sm,
+        md: $screen-md,
+        lg: $screen-lg
+);
+
+//MEDIA SCREEN
+@mixin media($mq-breakpoint, $mq-breakpoints: $breakpoints) {
+  @if map-has-key($mq-breakpoints, $mq-breakpoint) {
+    $mq-breakpoint: map-get($mq-breakpoints, $mq-breakpoint);
+  }
+
+  @media screen and #{$mq-breakpoint} {
+    @content;
+  }
+}

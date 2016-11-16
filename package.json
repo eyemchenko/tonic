@@ -1,0 +1,31 @@
+{
+  "name": "tonic",
+  "version": "1.0.0",
+  "description": "Test task for Tonic Health Company",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eyemchenko/tonic.git"
+  },
+  "author": "Eugene Iemchenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eyemchenko/tonic/issues"
+  },
+  "homepage": "https://github.com/eyemchenko/tonic#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-sass": "^2.3.2",
+    "gulp.spritesmith": "^6.2.1"
+  },
+  "dependencies": {
+    "imagemin": "^5.2.2",
+    "imagemin-jpeg-recompress": "^5.1.0",
+    "imagemin-pngquant": "^5.0.0"
+  }
+}

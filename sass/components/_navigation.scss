@@ -1,0 +1,69 @@
+.nav {
+  overflow: auto;
+  background-image: -moz-linear-gradient(90deg, rgb(241, 241, 241) 0%, rgb(246, 245, 245) 100%);
+  background-image: -webkit-linear-gradient(90deg, rgb(241, 241, 241) 0%, rgb(246, 245, 245) 100%);
+  background-image: -ms-linear-gradient(90deg, rgb(241, 241, 241) 0%, rgb(246, 245, 245) 100%);
+  @include box-shadow(0 2px 1px 0 rgba(0, 0, 0, 0.08));
+  @include border-radius(25px);
+  a {
+    padding: 0 25px;
+    font: 11px/50px $font;
+    color: #9d9c9c;
+    display: block;
+    float: left;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-right: 1px solid #e6e6e6;
+    &:hover {
+      text-decoration: underline;
+    }
+    &:first-child {
+      &:after {
+        content: '';
+        @extend .sprite, .icon-home;
+      }
+    }
+  }
+
+  @include media(xs){
+    display: none;
+  }
+
+  @include media(sm){
+    display: none;
+  }
+
+  @include media(md){
+    display: block;
+  }
+
+  @include media(lg){
+    display: block;
+  }
+}
+
+.mobile-nav {
+  display: none;
+  cursor: pointer;
+  .bar {
+    width: 35px;
+    height: 5px;
+    margin: 5px 0;
+    background: #9d9c9c;
+  }
+  @include media(xs) {
+    display: block !important;
+  }
+
+  @include media(sm) {
+    display: block !important;
+  }
+
+  @include media(md) {
+    display: none;
+  }
+
+  @include media(lg) {
+    display: none;
+  }
+}

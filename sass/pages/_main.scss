@@ -1,0 +1,57 @@
+.main {
+  .owl-carousel {
+
+    .item-text {
+      display: inline-block;
+      width: 30%;
+
+      @include media(xs) {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 30px;
+      }
+
+      @include media(sm) {
+        width: 100%;
+      }
+
+      @include media(md) {
+        width: 40%;
+      }
+
+
+      h1 {
+        font: 300 18px $font;
+        text-transform: uppercase;
+        color: #9d9c9d;
+      }
+
+      p {
+        font: 13px $font;
+        color: #9d9c9d;
+      }
+
+      a {
+        font: italic 13px $font;
+        color: #6f6d6d;
+        text-decoration: none;
+        &:after {
+          margin-left: 5px;
+          display: inline-block;
+          content: "\2192";
+        }
+      }
+    }
+    figure {
+      width: 308px;
+      height: 155px;
+      display: block;
+      background: url('../img/coffee.png') no-repeat center center;
+
+      @include media(sm){
+        background-size: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
